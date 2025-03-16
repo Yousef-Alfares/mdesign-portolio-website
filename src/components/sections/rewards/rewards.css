@@ -1,0 +1,14 @@
+.rewards .container .line {
+  width: 1px;
+  height: 68px;
+  background-color: #0db760;
+}
+
+.rewards .container div {
+  span {
+    font-size: clamp(1.85rem, 5vw, 3rem);
+  }
+  p {
+    font-size: clamp(0.85rem, 3vw, 1.25rem);
+  }
+}

@@ -1,0 +1,44 @@
+.contact::before {
+  content: "";
+  position: absolute;
+  width: 61px;
+  height: 130px;
+  background-image: url(../../../images/Group\ 9086.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: 0;
+  top: 50px;
+}
+
+.contact::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 90px;
+  background-image: url(../../../images/effect-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: -11px;
+  top: 10px;
+}
+
+.contact .container div:last-child .other-contact-methods div:first-child {
+  box-shadow: 5px 0 100px 0 rgb(198 198 198 / 20%);
+}
+
+:is(.dark)
+  .contact
+  .container
+  div:last-child
+  .other-contact-methods
+  div:first-child {
+  box-shadow: 5px 0 100px 0 rgb(198 198 198 / 10%);
+}
+
+:is(.dark) .contact .container div:last-child form div :is(input, textarea) {
+  border-color: #161616;
+}
+
+.contact .container div:last-child form div textarea {
+  resize: none;
+}

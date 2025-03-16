@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { Suspense, lazy } from "react";
+import LoadingAnimation from "./components/loading-animation/LoadingAnimation";
+const Navbar = lazy(() => import("./components/sections/navbar/Navbar"));
+const Hero = lazy(() => import("./components/sections/hero/Hero"));
+const Rewards = lazy(() => import("./components/sections/rewards/Rewards"));
+const Skills = lazy(() => import("./components/sections/Skills/Skills"));
+const Portfolio = lazy(() =>
+  import("./components/sections/portfolio/Portfolio")
+);
+const Reviews = lazy(() => import("./components/sections/reviews/Reviews"));
+const Contact = lazy(() => import("./components/sections/contact/Contact"));
+const Footer = lazy(() => import("./components/sections/footer/Footer"));
+const ScrollToTop = lazy(() => import("./components/scrollToTop/ScrollToTop"));
 
 function App() {
+  const mainElement = document.getElementById("root");
+
+  mainElement.classList = localStorage.getItem("mode");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App dark:bg-black">
+      <Suspense fallback={<LoadingAnimation />}>
+        <Navbar />
+        <div className="header relative mx-auto max-w-screen-lg">
+          <Hero />
+        </div>
+        <Rewards />
+        <Skills />
+        <Portfolio />
+        <Reviews />
+        <Contact />
+        <Footer />
+        <ScrollToTop />
+      </Suspense>
     </div>
   );
 }

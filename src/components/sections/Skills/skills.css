@@ -1,0 +1,28 @@
+.skills::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  top: 0;
+  right: -13px;
+  background-image: url(../../../images/effect-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.skills .container .hire {
+  & h2 {
+    font-size: clamp(1.7rem, 3vw, 2.25rem);
+  }
+  & p {
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+  }
+}
+
+.skills .container .mySkills div:first-child .skill:first-child {
+  box-shadow: 5px 0 100px 0 #f7f7f7;
+}
+
+:is(.dark) .skills .container .mySkills div:first-child .skill:first-child {
+  box-shadow: 5px 0 170px 0 rgb(254 254 254 / 10%);
+}

@@ -1,0 +1,15 @@
+.navbar .toggle-mode svg {
+  transition: 0s !important;
+  -webkit-transition: 0s !important;
+  -moz-transition: 0s !important;
+  -ms-transition: 0s !important;
+  -o-transition: 0s !important;
+}
+
+.navbar .toggle-mode:hover svg {
+  fill: white;
+}
+
+:is(.dark) .navbar .toggle-mode:hover svg {
+  fill: black;
+}
