@@ -1,87 +1,94 @@
 .animation-right {
-  animation: animation-right 0.5s backwards;
-  -webkit-animation: animation-right 0.5s backwards;
+  animation-name: animation-right;
+  animation-duration: 0.5s;
+  animation-timing-function: backwards;
 }
 
 .animation-right-500 {
-  animation: animation-right 0.5s backwards;
-  -webkit-animation: animation-right 0.7s backwards;
+  animation-name: animation-right;
+  animation-duration: 0.5s;
+  animation-timing-function: backwards;
   animation-delay: 0.4s;
 }
 
 .animation-right-1000 {
-  animation: animation-right 0.5s backwards;
-  -webkit-animation: animation-right 0.5s backwards;
+  animation-name: animation-right;
+  animation-duration: 0.5s;
+  animation-timing-function: backwards;
   animation-delay: 0.8s;
 }
 
 .animation-scale-1200 {
-  animation: scale 0.5s backwards;
-  -webkit-animation: scale 0.5s backwards;
+  animation-name: scale;
+  animation-duration: 0.5s;
+  animation-timing-function: backwards;
   animation-delay: 1.1s;
 }
 
 .animation-scale-1600 {
-  animation: scale 0.5s backwards;
-  -webkit-animation: scale 0.5s backwards;
+  animation-name: scale;
+  animation-duration: 0.5s;
+  animation-timing-function: backwards;
   animation-delay: 1.4s;
 }
 
 .animation-left-1500 {
-  animation: animation-to-left 1s backwards;
-  -webkit-animation: animation-to-left 1s backwards;
+  animation-name: animation-to-left;
+  animation-duration: 1s;
+  animation-timing-function: backwards;
   animation-delay: 1.5s;
 }
 
 .animation-opacity-2300 {
-  animation: animation-opacity 1s backwards;
-  -webkit-animation: animation-opacity 1s backwards;
+  animation-name: animation-opacity;
+  animation-duration: 1s;
+  animation-timing-function: backwards;
   animation-delay: 2.3s;
 }
 
 .animation-to-right {
-  animation: left-to-right linear;
-  -webkit-animation: left-to-right linear;
+  animation-name: left-to-right;
+  animation-timing-function: linear;
   animation-timeline: view();
   animation-range-start: cover;
   animation-range-end: 100px;
 }
 
 .animation-to-left {
-  animation: right-to-left linear;
-  -webkit-animation: right-to-left linear;
+  animation-name: right-to-left;
+  animation-timing-function: linear;
   animation-timeline: view(100px);
   animation-range-start: cover;
   animation-range-end: 500px;
 }
 
 .animation-left {
-  animation: to-left linear;
-  -webkit-animation: to-left linear;
+  animation-name: to-left;
+  animation-timing-function: linear;
   animation-timeline: view();
   animation-range-start: cover;
   animation-range-end: 300px;
 }
 
 .animation-to-top {
-  animation: bottom-to-top linear;
-  -webkit-animation: bottom-to-top linear;
+  animation-name: bottom-to-top;
+  animation-timing-function: linear;
   animation-timeline: view();
   animation-range-start: cover;
   animation-range-end: 100px;
 }
 
 .animation-top {
-  animation: to-top linear;
-  -webkit-animation: to-top linear;
+  animation-name: to-top;
+  animation-timing-function: linear;
   animation-timeline: view();
   animation-range-start: cover;
   animation-range-end: 100px;
 }
 
 .animation-scale {
-  animation: scale linear;
-  -webkit-animation: scale linear;
+  animation-name: scale;
+  animation-timing-function: linear;
   animation-timeline: view();
   animation-range-start: cover;
   animation-range-end: 250px;
