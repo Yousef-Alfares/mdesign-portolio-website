@@ -50,7 +50,7 @@
 .animation-to-left {
   animation: right-to-left linear;
   -webkit-animation: right-to-left linear;
-  animation-timeline: view();
+  animation-timeline: view(100px);
   animation-range-start: cover;
   animation-range-end: 500px;
 }
