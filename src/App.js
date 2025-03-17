@@ -15,6 +15,13 @@ const ScrollToTop = lazy(() => import("./components/scrollToTop/ScrollToTop"));
 function App() {
   const mainElement = document.getElementById("root");
 
+  const systemPrefersDark = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches;
+
+  localStorage.getItem("mode") === null &&
+    localStorage.setItem("mode", systemPrefersDark ? "dark" : "light");
+
   mainElement.classList = localStorage.getItem("mode");
 
   return (

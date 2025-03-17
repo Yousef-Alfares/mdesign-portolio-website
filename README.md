@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with React, Tailwind CSS, and vario
 
 ## Features
 
-- 🌓 Dark/Light mode toggle
+- 🌓 Dark/Light mode based on the user's system preferences
 - 📱 Fully responsive design
 - 🎨 Modern UI with Tailwind CSS
 - ⚡ Lazy loading components

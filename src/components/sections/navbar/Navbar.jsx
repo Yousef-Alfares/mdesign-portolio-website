@@ -64,8 +64,6 @@ const Navbar = () => {
     return lSget("mode") === "dark" ? setIsDark(true) : setIsDark(false);
   };
 
-  lSget("mode") === null && lSset("mode", "light");
-
   const setDark = () => {
     lSget("mode") === "light" ? lSset("mode", "dark") : lSset("mode", "light");
     mainElement.classList = lSget("mode");

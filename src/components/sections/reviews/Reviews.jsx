@@ -50,7 +50,7 @@ const Reviews = () => {
   ];
 
   return (
-    <div className="testimonial relative">
+    <div className="testimonial relative overflow-x-hidden">
       <div className="container mx-auto max-w-screen-lg px-2 sm:px-6 lg:px-8 flex flex-col items-start justify-between gap-10 sm:gap-5 lg:gap-8 pt-24 md:mt-12">
         <div className="info">
           <span className="title inline-block text-lg font-medium text-green relative ml-2 animation-to-right">
